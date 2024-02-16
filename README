@@ -1,0 +1,37 @@
+Program Author: Joshua Soutar 101225857
+
+Purpose:A program used for manipulating records of patients and employees in a hospital. The program would allow hospital administrators to query the data and to obtain some summary information.
+
+Usage/Compiliation: Enter this into the command prompt:
+"gcc -o a.out employee.c hospital.c populateRecords.c patient.c struct.h"
+
+This previous an executable "a.out" which runs the program by entering "./a.out hospital num", where num is the amount of records to be populated. If "hospital" or a number is not entered in that order the program won't let you start the menu.
+
+List of Source Files:
+(1) employee.c
+(2) employee.h
+(3) hospital.c
+(4) patient.c
+(5) patient.h
+(6) populateRecords.c
+(7) populateRecords.h
+(8) struct.h
+
+*Information about source files.
+hospital.c contains the main program (caontaining main(argc, argv)) and the menu functionality.
+
+patient.c/patient.h contain the functions for handling patient records.
+
+employee.c/employee.h contains the functions for handing employee records.
+
+struct.h contains the declaration of the three structures (patient, employee, and person).
+
+populateRecords.c/populateRecords.h populate the array person.
+
+Revisions:
+(1) Coded functionality - Joshua Soutar - 11/4/2022.
+
+*Note For a decreased size, the variables float dailyCost in patient and float salary could've been reduced to (i.e an int), but without the certainty of not being any cents they were forced to stay as floats. Specifically keeping the sizeof(patient) to 8, as if it was reduced to a short, the sizeof(patient) could've been halved to 4 bytes.
+
+*How to use the program.
+With the given information of getting to the menu in "usage/compilation", once you're in the memnu theres 6 options, and the option to quit (entering 0 twice in a row). They're all self explanatory as you simply enter the corresponding number. Except for 3 (search for all patiens by family name), its case sensitive, and if you enter a wrong name it will simply go back to displaying the menu. 
