@@ -4,13 +4,6 @@
 
 
 /* The file contains the structure declarations required by the program 
-
-
-
-Revisions:
-October 2021 Doron Nussbaum  updated version
-October 2022 Doron Nussbaum  updated version
-
 */
 
 /***************************************************************/
