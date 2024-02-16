@@ -7,9 +7,6 @@ in the array.
 
 The records are populated using random number generator. No special seed point is given (using the default seed of 1).
 
-
-Revisions:
-15/2/2018 - Doron Nussbaum file created
  
  */
 
